@@ -25,7 +25,6 @@
 <div class="container">
     <div>
         <h2>{{$book->title}}</h2>
-        <div id='addfavorite'></div>
     </div>
 
     <hr>
