@@ -62,9 +62,6 @@
                             <a class="nav-link" href="/books">{{ __('Book') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">{{ __('Wishlist') }}</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="/purchases">{{ __('Purchase') }}</a>
                         </li>
                         <li class="nav-item">
@@ -78,9 +75,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/book_record">{{ __('Book record') }}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">{{ __('Sales') }}</a>
                         </li>
                         @endcan
                         <li class="nav-item dropdown">
