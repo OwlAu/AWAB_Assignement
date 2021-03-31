@@ -96,6 +96,6 @@ class PurchaseController extends Controller
     {
         $purchase = Purchase::findOrFail($id);
         $purchase->delete();
-        return redirect('purchases')->with('purchase',$purchase);
+        return redirect('/purchases');
     }
 }

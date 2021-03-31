@@ -49,8 +49,8 @@
             </td>
             <td>
                 <a href='/update_book_record/{{$book->id}}' type="button" class="btn btn-warning">Edit</a>
-                {{-- <a href='/delete_book_record/{{$book->id}}' type="button" class="btn btn-danger" >Delete</a> --}}
-                <!-- Trigger the modal with a button -->
+                <a href='/delete_book_record/{{$book->id}}' type="button" class="btn btn-danger">Delete</a>
+                {{-- <!-- Trigger the modal with a button -->
                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Delete</button>
 
                 <!-- Modal -->
@@ -64,15 +64,14 @@
                             </div>
                             <div class="modal-body">
                                 <p>Do you wish to delete {{$book->title}}?</p>
-                                <p>This action is irreversible.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <a href='/delete_book_record/{{$book->id}}' type="button" class="btn btn-danger" >Delete</a>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
+                <p>This action is irreversible.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                </div>
 
-                    </div>
+                </div> --}}
                 </div>
             </td>
         </tr>

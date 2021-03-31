@@ -52,59 +52,8 @@ use App\Models\Book;
             @endif
             <td>
                 @if($purchase->status == 'pending')
-                <!-- Trigger the modal with a button -->
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Make
-                    payment</button>
-
-                <!-- Modal -->
-                <div id="myModal" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
-
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Purchase {{Book::find($purchase->book_id)->title}}</h4>
-                            </div>
-                            <div class="modal-body">
-                                <p>Do you wish to buy {{Book::find($purchase->book_id)->title}}?</p>
-                            </div>
-                            <div class="modal-footer">
-                                <a href='/update_purchase_info/{{$purchase->id}}' type="button"
-                                    class="btn btn-success">Confirm</a>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                @endif
-
-                @if($purchase->status == 'pending')
-                <!-- Trigger the modal with a button -->
-                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal1">Delete</button>
-
-                <!-- Modal -->
-                <div id="myModal1" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
-
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Delete purchase record</h4>
-                            </div>
-                            <div class="modal-body">
-                                <p>Do you wish to delete {{Book::find($purchase->book_id)->title}}?</p>
-                                <p>This action is irreversible.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <a href='/delete_purchase_info/{{$purchase->id}}' type="button"
-                                    class="btn btn-danger">Delete</a>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+                <a href='/update_purchase_info/{{$purchase->id}}' type="button" class="btn btn-success">Confirm</a>
+                <a href='/delete_purchase_info/{{$purchase->id}}' type="button" class="btn btn-danger">Delete</a>
                 @endif
             </td>
         </tr>
