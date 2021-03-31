@@ -81,10 +81,10 @@ use App\Models\Book;
 
                 @if($purchase->status == 'pending')
                 <!-- Trigger the modal with a button -->
-                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Delete</button>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal1">Delete</button>
 
                 <!-- Modal -->
-                <div id="myModal" class="modal fade" role="dialog">
+                <div id="myModal1" class="modal fade" role="dialog">
                     <div class="modal-dialog">
 
                         <!-- Modal content-->
