@@ -37,11 +37,11 @@
 <div class="container">
     <div class="col-md-15">
         <h3>Pick your books here! There are {{$books->count()}} for you to pick from!</h3>
-
         <div class='flex-container'>
             @foreach($books as $book)
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{{asset('uploads/bookImage/'.$book->image)}}" alt="Card image cap">
+                <img style='max-width: 100%; height:auto;' class="card-img-top"
+                    src="{{asset('uploads/bookImage/'.$book->image)}}" alt="Card image cap">
                 <div class="card-body">
                     <p style='float:left;' class="card-text">{{$book->title}}</p>
                     <a style='float:right;' href='/books/{{$book->id}}'>Learn More></a>

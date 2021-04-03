@@ -82,7 +82,7 @@ class PurchaseController extends Controller
         $updateBook->quantity = $updateBookQuantityAfter ;
         $updateBook->save();
 
-        return view('home');
+        return redirect('/purchases');
 
     }
 
